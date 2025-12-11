@@ -1,35 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./assets/styles/global.css";
+import Amigo from "./components/Amigo";
+
+import amigo1 from './assets/amigo1.png';
+import amigo2 from './assets/amigo2.png';
+import amigo3 from './assets/amigo3.png';
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="container">
+      <Amigo nombre="Juan Camilo" edad={25} ciudad="Medellin" imagen={amigo1}/>
+      <Amigo nombre="Valentina" edad={22} ciudad="Bello" imagen={amigo2}/>
+      <Amigo nombre="Santiago" edad={30} ciudad="Envigado" imagen={amigo3}/>
+    </div>
+  );
 }
 
-export default App
+export default App;
