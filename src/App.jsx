@@ -1,9 +1,9 @@
 import "./assets/styles/global.css";
 import Amigo from "./components/Amigo";
 
-import amigo1 from './assets/amigo1.png';
-import amigo2 from './assets/amigo2.png';
-import amigo3 from './assets/amigo3.png';
+import amigo1 from './assets/amigo1.jpg';
+import amigo2 from './assets/amigo2.jpg';
+import amigo3 from './assets/amigo3.jpg';
 
 
 function App() {
